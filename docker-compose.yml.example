@@ -1,0 +1,10 @@
+version: "3.8"
+
+services:
+
+  botserver:
+    container_name: botserver
+    build: .
+    restart: always
+    environment:
+      - TELEGRAM_BOT_API_TOKEN=<YOUR TOKEN>
